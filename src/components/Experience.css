@@ -1,0 +1,85 @@
+.about-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #0a0117, #1d0f2f);
+    color: #ffffff;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #ffb0f9;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-section h3 {
+    color: #d9a3ff;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #d9a3ff;
+    padding-bottom: 0.5rem;
+}
+
+.about-section p,
+.about-section li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f3eaff;
+}
+
+.about-section ul {
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+
+.about-section .highlight {
+    color: #ffb0f9;
+    font-weight: bold;
+}
+
+
+/* Tablets (768px a 1024px) */
+
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 3rem 1.5rem;
+    }
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+    .about-section h3 {
+        font-size: 1.4rem;
+    }
+    .about-section p,
+    .about-section li {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* Teléfonos (≤ 767px) */
+
+@media (max-width: 767px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+    .about-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-section h3 {
+        font-size: 1.2rem;
+        padding-bottom: 0.4rem;
+    }
+    .about-section p,
+    .about-section li {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .about-section ul {
+        margin-left: 1rem;
+    }
+}

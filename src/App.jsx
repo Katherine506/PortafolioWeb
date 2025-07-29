@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import AboutSection from "./components/AboutSection";
+import Experience from "./components/Experience";
+import Habilities from "./components/Habilities";
 import ContactSection from "./components/ContactSection";
+import ProjectsSection from "./components/projects/ProjectsSection";
 
 function App() {
   const [section, setSection] = useState("inicio");
@@ -12,7 +14,9 @@ function App() {
       <Navbar setSection={setSection} />
 
       {section === "inicio" && <Hero />}
-      {section === "sobre-mi" && <AboutSection />}
+      {section === "experience" && <Experience />}
+      {section === "habilidades" && <Habilities />}
+      {section === "portafolio" && <ProjectsSection />}
       {section === "contacto" && <ContactSection />}
     </>
   );

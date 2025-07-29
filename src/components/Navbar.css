@@ -1,57 +1,110 @@
-/* src/components/Navbar.css */
-
 html {
-  scroll-behavior: smooth;
-}
-
-.nav-links li {
-  cursor: pointer;
+    scroll-behavior: smooth;
 }
 
 .navbar {
-  padding: 1rem 5rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  background-color: #0e031c;
-  /* Asegura que el fondo no sea transparente */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(135deg, #0a0117, #1d0f2f);
+    box-sizing: border-box;
 }
 
 .nav-container {
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-logo {
-  color: #ffb0f9;
-  font-weight: bold;
-  font-size: 1.3rem;
+    color: #ffb0f9;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
+
+
+/* NAV LINKS */
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s;
+.nav-links li {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-  color: #fff;
+.nav-links li:hover,
+.nav-links li:focus {
+    color: #fff;
 }
 
-.nav-links a:active {
-  color: #ffb0f9;
+.nav-links li:active {
+    color: #ffb0f9;
+}
+
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #ffb0f9;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* RESPONSIVE: MOBILE & TABLET */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #1d0f2f;
+        padding: 1rem 2rem;
+        display: none;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
 }
