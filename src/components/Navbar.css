@@ -1,40 +1,57 @@
 /* src/components/Navbar.css */
 
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
 .navbar {
   padding: 1rem 5rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
-  .nav-container {
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-logo {
-    color: #ffb0f9;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-  .nav-links a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover,
-  .nav-links a:focus {
-    color: #fff;
-  }
-  .nav-links a:active {
-    color: #ffb0f9;
-  }
+  background-color: #0e031c;
+  /* Asegura que el fondo no sea transparente */
+}
+
+.nav-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: #ffb0f9;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #fff;
+}
+
+.nav-links a:active {
+  color: #ffb0f9;
 }

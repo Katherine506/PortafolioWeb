@@ -1,29 +1,14 @@
-// src/components/Navbar.jsx
-import React from "react";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ setSection }) {
   return (
     <nav className="navbar">
-      <div className="nav-container">
-        <ul className="nav-links">
-          <li>
-            <a href="#inicio">Inicio</a>
-          </li>
-          <li>
-            <a href="#acerca">Sobre mí</a>
-          </li>
-          <li>
-            <a href="#servicios">Portafolio</a>
-          </li>
-          <li>
-            <a href="#portafolio">Experiencia Laboral</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <ul className="nav-links">
+        <li onClick={() => setSection("inicio")}>Inicio</li>
+        <li onClick={() => setSection("sobre-mi")}>Sobre mí</li>
+        <li onClick={() => setSection("portafolio")}>Portafolio</li>
+        <li onClick={() => setSection("contacto")}>Contacto</li>
+      </ul>
     </nav>
   );
 }
