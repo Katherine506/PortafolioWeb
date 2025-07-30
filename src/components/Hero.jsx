@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Hero.css";
 import heroImage from "../assets/hero-image.png";
+import cvES from "../documents/Katherine_Gonzalez_CV_Español_2025.pdf";
+import cvEN from "../documents/Katherine_Gonzalez_CV_English_2025.pdf";
 
 function Hero() {
   const [cvOption, setCvOption] = useState(""); // Estado para controlar el select
@@ -47,12 +49,8 @@ function Hero() {
               <option value="" disabled hidden>
                 Descargar CV
               </option>
-              <option value="/Katherine_Gonzalez_CV_Español_2025.pdf">
-                Español 🇪🇸
-              </option>
-              <option value="/Katherine_Gonzalez_CV_English_2025.pdf">
-                English 🇺🇸
-              </option>
+              <option value={cvES}>Español 🇪🇸</option>
+              <option value={cvEN}>English 🇺🇸</option>
             </select>
           </div>
 
