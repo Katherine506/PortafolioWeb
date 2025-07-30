@@ -136,6 +136,11 @@
         padding: 4rem 1rem;
         gap: 0rem;
     }
+    .contact-info {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+    }
     .contact-info,
     .contact-form {
         flex: 1 1 100%;
@@ -147,7 +152,6 @@
     }
     .contact-info p {
         font-size: 1rem;
-        text-align: center;
     }
     .social-icons {
         text-align: center;
