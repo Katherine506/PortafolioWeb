@@ -7,9 +7,11 @@
 }
 
 .projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
+    color: #ffb0f9;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .projects-grid {
@@ -56,9 +58,9 @@
 }
 
 .project-button {
-    background-color: #9147ff;
+    background-color: #ff9fe1;
     /* Botón morado vibrante */
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
@@ -69,7 +71,33 @@
 }
 
 .project-button:hover {
-    background-color: #6f36cc;
+    color: black;
+    background-color: #fff;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin: 0.8rem 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.tech-list li {
+    background-color: #4b2a6f;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }
 
 
@@ -77,10 +105,13 @@
 
 @media (max-width: 1024px) {
     .projects-section {
-        padding: 1.5rem 1rem;
+        padding: 2.5rem 1rem;
     }
     .projects-section h2 {
         font-size: 1.8rem;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 1.3rem;
     }
     .projects-grid {
         gap: 1.5rem;
@@ -99,7 +130,7 @@
 
 @media (max-width: 767px) {
     .projects-section {
-        padding: 1rem 0.5rem;
+        padding: 4rem 0.5rem;
     }
     .projects-section h2 {
         font-size: 1.6rem;

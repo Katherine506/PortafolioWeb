@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import "./ContactSection.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function ContactSection() {
   const form = useRef();
@@ -68,15 +69,17 @@ function ContactSection() {
             href="https://www.linkedin.com/in/katherine-gonz%C3%A1lez-960ab6188/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
           <a
             href="https://github.com/Katherine506"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
-            GitHub
+            <FaGithub />
           </a>
         </div>
       </div>

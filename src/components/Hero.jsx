@@ -25,13 +25,16 @@ function Hero() {
             Especialista en crear soluciones inteligentes que combinan IA y
             desarrollo de software para resolver desafíos reales.
           </p>
-          <p>
+          <p className="description">
             Apasionada por el diseño de sistemas que integran precisión técnica
             con sensibilidad humana, aplico principios de machine learning,
             ciencia de datos y accesibilidad para construir productos
-            funcionales e inclusivos. Mi objetivo profesional es seguir
-            creciendo en proyectos interdisciplinarios donde la IA impulse el
-            impacto social y tecnológico de las soluciones digitales.
+            funcionales e inclusivos.
+          </p>
+          <p className="description">
+            Mi objetivo profesional es seguir creciendo en proyectos
+            interdisciplinarios donde la IA impulse el impacto social y
+            tecnológico de las soluciones digitales.
           </p>
 
           <div className="buttons">

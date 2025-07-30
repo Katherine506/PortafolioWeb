@@ -69,7 +69,7 @@
 }
 
 .btn.download:hover {
-    background: #f06ad8;
+    background: #fff;
 }
 
 .socials a {
@@ -108,13 +108,16 @@ select.btn.download {
 }
 
 select.btn.download:hover {
-    background-color: #f06ad8;
+    background-color: #fff;
 }
 
 
 /* Tablets */
 
 @media (max-width: 1024px) {
+    .text-content {
+        padding-top: 1rem;
+    }
     .name {
         font-size: 2.5rem;
     }

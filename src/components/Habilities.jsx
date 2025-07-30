@@ -4,8 +4,6 @@ import "./Habilities.css";
 const Habilities = () => {
   return (
     <section id="habilidades" className="habilidades-section">
-      <h2>Habilidades</h2>
-
       <h3 className="subsection-title">Habilidades técnicas</h3>
       <ul className="skills-list">
         <li>Lenguajes: Java, C, C++, Python, JavaScript</li>

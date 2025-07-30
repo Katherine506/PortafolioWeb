@@ -35,13 +35,21 @@
     font-size: 1.3rem;
 }
 
+.social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
 .social-icons a {
-    display: inline-block;
-    margin-right: 1rem;
     color: #ffb0f9;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #ff69b4;
+    transform: scale(1.1);
+    /* Efecto de aumento suave al hacer hover */
 }
 
 .contact-form {
@@ -79,11 +87,8 @@
 }
 
 .contact-form button:hover {
-    background: #f06ad8;
+    background: #fff;
 }
-
-
-/* SweetAlert ajustes accesibles */
 
 .swal-wide {
     font-size: 1.25rem;
@@ -128,8 +133,8 @@
 @media (max-width: 767px) {
     .contact-section {
         flex-direction: column;
-        padding: 2rem 1rem;
-        gap: 2rem;
+        padding: 4rem 1rem;
+        gap: 0rem;
     }
     .contact-info,
     .contact-form {
@@ -158,7 +163,6 @@
     .contact-form input,
     .contact-form textarea,
     .contact-form button {
-        width: 100%;
         font-size: 0.95rem;
         padding: 0.9rem;
     }
