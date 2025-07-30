@@ -10,8 +10,13 @@ function Hero() {
   const handleCvDownload = (e) => {
     const value = e.target.value;
     if (value) {
-      window.open(value, "_blank");
-      setCvOption(""); // Reinicia el selector
+      const link = document.createElement("a");
+      link.href = value;
+      link.download = value.split("/").pop(); // Usa el nombre del archivo
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setCvOption(""); // Reinicia el selector a "Descargar CV"
     }
   };
 
