@@ -74,7 +74,10 @@ function Hero() {
           </div>
         </div>
         <div className="image-container">
-          <img src="/images/hero-image.png" alt="Katherine con luces de neón" />
+          <img
+            src="./images/hero-image.png"
+            alt="Katherine con luces de neón"
+          />
         </div>
       </div>
     </section>
