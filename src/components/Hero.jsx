@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Hero.css";
+import heroImage from "../assets/hero-image.png";
 
 function Hero() {
   const [cvOption, setCvOption] = useState(""); // Estado para controlar el select
@@ -74,10 +75,7 @@ function Hero() {
           </div>
         </div>
         <div className="image-container">
-          <img
-            src="./images/hero-image.png"
-            alt="Katherine con luces de neón"
-          />
+          <img src={heroImage} alt="Katherine con luces de neón" />
         </div>
       </div>
     </section>
